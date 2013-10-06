@@ -4,4 +4,4 @@ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 source ~/.profile
 nvm install v0.10.20
 nvm alias default 0.10.20
-npm install forever
+npm install -g forever

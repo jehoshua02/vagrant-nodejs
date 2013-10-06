@@ -3,18 +3,24 @@
 Build the vagrant box:
 
 ```shell
-. ./rebuild.sh
+$ . ./rebuild.sh
 ```
 
-Start up http example script:
+Start example scripts:
 
 ```shell
-vagrant ssh -c '`npm bin`/forever start /vagrant/http.js'
+$ . ./start.sh
 ```
 
-Now test:
+Test it:
 
 ```shell
-curl http://192.168.200.10:1337
+$ nc 192.168.200.10 1337
+Echo server
+hello
+hello
+^C
+$ curl 192.168.200.10:8080
+Hello World
 ```
 
